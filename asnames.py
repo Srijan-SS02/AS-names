@@ -23,7 +23,7 @@ class ASNames(object):
             logging.warn('Cannot fetch file from RIPE website!')
             return False
 
-        for line in req.text:
+        for line in req.text.splitlines():
             asn, _, name = line.partition(' ')
             self.ripe[int(asn)] = name
 
