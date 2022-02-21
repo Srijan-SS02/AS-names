@@ -1,2 +1,9 @@
 # AS-names
-Set AS names in IHR database
+
+Fetch Autonomous Systems name from RIPE (https://ftp.ripe.net/ripe/asnames/asn.txt)
+and update names in IHR database. 
+
+Usage:
+```zsh
+python3 asnames.py
+```
